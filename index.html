@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!--
+      Vivero Los Álamos — Sitio informativo SPA (Single Page Aesthetic)
+      Tecnologías: HTML5 + CSS3 (sin frameworks)
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Vivero Los Álamos: tradición, plantas y árboles para tu hogar y proyecto de paisajismo. Atención cercana, calidad y naturaleza."
+    />
+
+    <title>Vivero Los Álamos | Naturaleza que inspira</title>
+
+    <!-- Tipografías elegantes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--
+      Header
+      - Logo en texto
+      - Navegación sticky
+    -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Vivero Los Álamos</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a class="nav__link" href="#nosotros">Nosotros</a>
+          <a class="nav__link" href="#catalogo">Catálogo</a>
+          <a class="nav__link" href="#galeria">Galería</a>
+          <a class="nav__link" href="#contacto">Contacto</a>
+          <a class="nav__cta" href="#catalogo">Ver Catálogo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--
+        Hero Section
+        - Imagen de fondo: public/Inicio.png
+        - Título + texto + CTA
+      -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <p class="eyebrow">Vivero &amp; paisajismo en Maipú</p>
+          <h1 id="hero-title" class="hero__title">
+            Naturaleza que se siente en casa.
+          </h1>
+          <p class="hero__subtitle">
+            Plantas sanas, árboles de calidad y asesoría cercana para que tu jardín
+            crezca con confianza y armonía.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#catalogo">Ver Catálogo</a>
+            <a class="btn btn--ghost" href="#contacto">Cotizar / Consultar</a>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Sección Nosotros
+        - Historia + enfoque en tradición y pasión por las plantas
+      -->
+      <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+        <div class="container two-col">
+          <div>
+            <h2 id="nosotros-title" class="section__title">Nosotros</h2>
+            <p class="section__lead">
+              En <strong>Vivero Los Álamos</strong> cultivamos más que plantas:
+              cuidamos espacios, acompañamos decisiones y compartimos una tradición
+              familiar que entiende el ritmo de la naturaleza.
+            </p>
+            <p class="section__text">
+              Seleccionamos especies ornamentales, frutales y de interior con un
+              estándar claro: vigor, salud y adaptación. Nos mueve el detalle, el
+              buen gusto y la calidez de una atención honesta.
+            </p>
+
+            <!-- Micro-bloques de confianza (UI orgánica y minimalista) -->
+            <div class="pill-row" role="list" aria-label="Pilares del vivero">
+              <div class="pill" role="listitem">Tradición</div>
+              <div class="pill" role="listitem">Calidad</div>
+              <div class="pill" role="listitem">Asesoría</div>
+              <div class="pill" role="listitem">Paisajismo</div>
+            </div>
+          </div>
+
+          <!-- Imagen decorativa (solo estética) -->
+          <aside class="about-card" aria-label="Imagen representativa del vivero">
+            <div class="about-card__media" aria-hidden="true"></div>
+            <div class="about-card__content">
+              <h3 class="about-card__title">Crecemos contigo</h3>
+              <p class="about-card__text">
+                Desde un balcón verde hasta un proyecto completo de jardín.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!--
+        Sección Galería / Productos (Catálogo)
+        - Cuadrícula CSS Grid con 4 categorías principales
+      -->
+      <section class="section section--alt" id="catalogo" aria-labelledby="catalogo-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="catalogo-title" class="section__title">Catálogo</h2>
+            <p class="section__lead">
+              Explora nuestras categorías principales. Seleccionamos especies con
+              estética natural y excelente desempeño en tu espacio.
+            </p>
+          </div>
+
+          <div class="grid" role="list" aria-label="Categorías del catálogo">
+            <!-- Tarjeta 1 -->
+            <article class="card" role="listitem">
+              <div class="card__media card__media--ornamentales" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Árboles Ornamentales</h3>
+                <p class="card__text">
+                  Sombra, estructura y carácter. Ideales para entradas, patios y
+                  alineaciones.
+                </p>
+                <a class="card__link" href="#contacto">Consultar disponibilidad</a>
+              </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="card" role="listitem">
+              <div class="card__media card__media--interior" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Plantas de Interior</h3>
+                <p class="card__text">
+                  Texturas orgánicas y verde vivo para hogares, oficinas y espacios
+                  luminosos.
+                </p>
+                <a class="card__link" href="#contacto">Pedir recomendaciones</a>
+              </div>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="card" role="listitem">
+              <div class="card__media card__media--frutales" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Árboles Frutales</h3>
+                <p class="card__text">
+                  Cultiva temporadas. Variedades seleccionadas para un crecimiento
+                  sano y productivo.
+                </p>
+                <a class="card__link" href="#contacto">Cotizar tu selección</a>
+              </div>
+            </article>
+
+            <!-- Tarjeta 4 -->
+            <article class="card" role="listitem">
+              <div class="card__media card__media--paisajismo" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Paisajismo</h3>
+                <p class="card__text">
+                  Diseño y composición: materiales, especies y armonía para un
+                  resultado sobrio y natural.
+                </p>
+                <a class="card__link" href="#contacto">Solicitar evaluación</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Sección Galería — Fotos de public/Galeria
+      -->
+      <section class="section" id="galeria" aria-labelledby="galeria-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="galeria-title" class="section__title">Galería</h2>
+            <p class="section__lead">
+              Algunos momentos y productos de nuestro vivero. Precios referenciales, sujetos a disponibilidad.
+            </p>
+          </div>
+          <div class="gallery" role="list" aria-label="Galería de imágenes del vivero con precios referenciales">
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto1.jpeg" alt="Producto vivero 1" loading="lazy" />
+              <span class="gallery__price">Desde $8.500</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto2.jpeg" alt="Producto vivero 2" loading="lazy" />
+              <span class="gallery__price">Desde $12.000</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto3.jpeg" alt="Producto vivero 3" loading="lazy" />
+              <span class="gallery__price">Desde $6.900</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto4.jpeg" alt="Producto vivero 4" loading="lazy" />
+              <span class="gallery__price">Desde $15.000</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto5.jpeg" alt="Producto vivero 5" loading="lazy" />
+              <span class="gallery__price">Desde $9.500</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto6.jpeg" alt="Producto vivero 6" loading="lazy" />
+              <span class="gallery__price">Desde $11.000</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto7.jpeg" alt="Producto vivero 7" loading="lazy" />
+              <span class="gallery__price">Desde $18.000</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto8.jpeg" alt="Producto vivero 8" loading="lazy" />
+              <span class="gallery__price">Desde $7.500</span>
+            </div>
+            <div class="gallery__item" role="listitem">
+              <img src="public/Galeria/producto9.jpeg" alt="Producto vivero 9" loading="lazy" />
+              <span class="gallery__price">Desde $14.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Sección Contacto
+        - Información + redes + formulario (solo diseño)
+      -->
+      <section class="section" id="contacto" aria-labelledby="contacto-title">
+        <div class="container contact">
+          <div class="contact__info">
+            <h2 id="contacto-title" class="section__title">Contacto</h2>
+            <p class="section__lead">
+              Te ayudamos a elegir lo indicado según luz, riego y espacio. Escríbenos
+              y te respondemos con calma y claridad.
+            </p>
+
+            <div class="info-list" role="list" aria-label="Información de contacto">
+              <div class="info-item" role="listitem">
+                <div class="info-item__label">Teléfono</div>
+                <a class="info-item__value" href="tel:+56900000000">+56 9 0000 0000</a>
+              </div>
+              <div class="info-item" role="listitem">
+                <div class="info-item__label">Correo</div>
+                <a class="info-item__value" href="mailto:sociedadmadretierra@gmail.com">sociedadmadretierra@gmail.com</a>
+              </div>
+              <div class="info-item" role="listitem">
+                <div class="info-item__label">Dirección</div>
+                <div class="info-item__value">Maipú, Santiago, Chile</div>
+              </div>
+              <div class="info-item" role="listitem">
+                <div class="info-item__label">Redes</div>
+                <div class="social">
+                  <a class="social__link" href="#" aria-label="Instagram (placeholder)">Instagram</a>
+                  <a class="social__link" href="#" aria-label="Facebook (placeholder)">Facebook</a>
+                  <a class="social__link" href="#" aria-label="WhatsApp (placeholder)">WhatsApp</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="note">
+              <p class="note__text">
+                Horarios y stock pueden variar por temporada. Si quieres, incluye en
+                tu mensaje la <strong>comuna</strong> y el <strong>tamaño del espacio</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formulario: diseño UI (sin backend) -->
+          <div class="contact__form" aria-label="Formulario de contacto (solo diseño)">
+            <form class="form" action="#" method="post">
+              <!-- Campos principales -->
+              <div class="form__grid">
+                <label class="field">
+                  <span class="field__label">Nombre</span>
+                  <input class="field__input" type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" />
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Teléfono</span>
+                  <input class="field__input" type="tel" name="telefono" placeholder="+56 9 ..." autocomplete="tel" />
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">Correo</span>
+                  <input class="field__input" type="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" />
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">Mensaje</span>
+                  <textarea class="field__textarea" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas (categoría, medidas, luz, riego)"></textarea>
+                </label>
+              </div>
+
+              <!-- Acciones -->
+              <div class="form__actions">
+                <button class="btn btn--primary" type="button">
+                  Enviar consulta
+                </button>
+                <p class="form__hint">
+                  Este formulario es solo demostración visual (sin envío real).
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--
+      Footer
+      - Copyright
+      - Enlaces rápidos
+    -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">Vivero Los Álamos</div>
+          <small class="footer-copy">
+            © <span id="year">2026</span> Todos los derechos reservados.
+          </small>
+        </div>
+
+        <div class="footer-links" aria-label="Enlaces rápidos del footer">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#top">Volver arriba</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
