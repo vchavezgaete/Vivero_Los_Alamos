@@ -1,0 +1,107 @@
+---
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import Layout from '../layouts/Layout.astro';
+
+const galleryDir = join(process.cwd(), 'public', 'Galeria');
+const images = readdirSync(galleryDir)
+  .filter((file) => /\.(jpe?g|png|webp)$/i.test(file))
+  .sort((a, b) => a.localeCompare(b, 'es', { numeric: true }))
+  .map((file, index) => ({
+    file,
+    src: `/Galeria/${file}`,
+    title: `Foto ${index + 1}`,
+  }));
+---
+
+<Layout title="Galería" description="Galería de fotos reales de Vivero Los Álamos.">
+  <article>
+    <header class="mb-10 md:mb-12">
+      <h1 class="text-3xl font-semibold tracking-tight text-natural-800 md:text-4xl">
+        Galería
+      </h1>
+      <p class="mt-3 max-w-2xl text-lg leading-relaxed text-natural-600">
+        Fotos reales de plantas, árboles y producción del vivero.
+      </p>
+    </header>
+
+    <section class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3" aria-label="Fotos del vivero">
+      {images.map((image) => (
+        <button
+          type="button"
+          class="group overflow-hidden rounded-2xl bg-white/80 text-left ring-1 ring-natural-200/70 transition hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-natural-600"
+          data-gallery-trigger
+          data-full-src={image.src}
+          data-title={image.title}
+          aria-label={`Ver ${image.title} en tamaño completo`}
+        >
+          <span class="block aspect-[4/3] overflow-hidden bg-natural-100">
+            <img
+              src={image.src}
+              alt={image.title}
+              loading="lazy"
+              class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          </span>
+          <span class="flex items-center justify-between gap-3 px-4 py-3">
+            <span class="font-semibold text-natural-800">{image.title}</span>
+            <span class="text-sm font-medium text-natural-600">Ver grande</span>
+          </span>
+        </button>
+      ))}
+    </section>
+
+    <dialog
+      id="gallery-dialog"
+      class="w-[min(1120px,calc(100vw-24px))] rounded-2xl bg-white p-0 text-natural-800 shadow-2xl backdrop:bg-black/75"
+      aria-labelledby="gallery-dialog-title"
+    >
+      <div class="flex items-center justify-between gap-4 border-b border-natural-200/70 px-4 py-3">
+        <h2 id="gallery-dialog-title" class="text-base font-semibold">Foto</h2>
+        <button
+          type="button"
+          class="rounded-full bg-natural-100 px-4 py-2 text-sm font-semibold text-natural-800 transition hover:bg-natural-200"
+          data-gallery-close
+        >
+          Cerrar
+        </button>
+      </div>
+      <div class="max-h-[82vh] bg-natural-900/95 p-3">
+        <img
+          src=""
+          alt=""
+          class="mx-auto max-h-[78vh] w-auto max-w-full rounded-lg object-contain"
+          data-gallery-image
+        />
+      </div>
+    </dialog>
+  </article>
+
+  <script>
+    const dialog = document.querySelector('#gallery-dialog');
+    const image = dialog?.querySelector('[data-gallery-image]');
+    const title = dialog?.querySelector('#gallery-dialog-title');
+    const closeButton = dialog?.querySelector('[data-gallery-close]');
+
+    document.querySelectorAll('[data-gallery-trigger]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        if (!(dialog instanceof HTMLDialogElement) || !(image instanceof HTMLImageElement) || !title) return;
+
+        const fullSrc = trigger.getAttribute('data-full-src') ?? '';
+        const imageTitle = trigger.getAttribute('data-title') ?? 'Foto';
+        image.src = fullSrc;
+        image.alt = imageTitle;
+        title.textContent = imageTitle;
+        dialog.showModal();
+      });
+    });
+
+    closeButton?.addEventListener('click', () => {
+      if (dialog instanceof HTMLDialogElement) dialog.close();
+    });
+
+    dialog?.addEventListener('click', (event) => {
+      if (event.target === dialog && dialog instanceof HTMLDialogElement) dialog.close();
+    });
+  </script>
+</Layout>
