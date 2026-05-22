@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "titulo": "Bienvenidos a Vivero Los Álamos",
+    "subtitulo": "Plantas, árboles y todo para tu jardín en Nueva Imperial",
+    "cta": "Ver productos",
+    "imagenFondo": "/Inicio.png"
+  },
+  "destacado": {
+    "titulo": "¿Por qué elegirnos?",
+    "items": [
+      {
+        "titulo": "Variedad",
+        "texto": "Amplia selección de plantas, árboles y productos para jardín."
+      },
+      {
+        "titulo": "Atención personalizada",
+        "texto": "Te asesoramos para elegir lo mejor para tu espacio."
+      },
+      {
+        "titulo": "Calidad",
+        "texto": "Plantas sanas y bien cuidadas para que tu jardín luzca perfecto."
+      }
+    ]
+  },
+  "llamadoAccion": {
+    "titulo": "Visítanos",
+    "texto": "Estamos en Pasaje Los Cipreses N° 22, Huertos Familiares, Nueva Imperial. Escríbenos al +56 9 9637 3763 o llama al 45 261 2428.",
+    "boton": "Contactar"
+  }
+}

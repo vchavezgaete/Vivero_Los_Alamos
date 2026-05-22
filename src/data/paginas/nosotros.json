@@ -1,0 +1,11 @@
+{
+  "titulo": "Nosotros",
+  "subtitulo": "Conoce Vivero Los Álamos",
+  "contenido": "Vivero Los Álamos nace con la idea de acercar la naturaleza y las plantas a las familias de Nueva Imperial y la región. Ofrecemos plantas ornamentales, árboles, sustratos y todo lo necesario para que puedas crear y cuidar tu jardín con la mejor asesoría.\n\nNos caracterizamos por la atención cercana y el compromiso con la calidad de nuestros productos. Puedes visitarnos o contactarnos a través de nuestras redes sociales.",
+  "imagen": "/img/nosotros.jpg",
+  "valores": [
+    { "titulo": "Calidad", "texto": "Plantas y productos seleccionados." },
+    { "titulo": "Confianza", "texto": "Años de experiencia en la zona." },
+    { "titulo": "Cercanía", "texto": "Atención personalizada para cada cliente." }
+  ]
+}

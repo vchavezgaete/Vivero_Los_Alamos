@@ -1,0 +1,13 @@
+{
+  "nombre": "Vivero Los Álamos",
+  "eslogan": "Plantas y naturaleza en Nueva Imperial",
+  "descripcionCorta": "Vivero Los Álamos es tu espacio para encontrar plantas, árboles y todo lo que necesitas para tu jardín en Nueva Imperial.",
+  "direccion": "Pasaje Los Cipreses N° 22, Huertos Familiares, Nueva Imperial",
+  "telefono": "+56 9 9637 3763",
+  "email": "",
+  "facebook": "https://www.facebook.com/profile.php?id=61586331163397",
+  "instagram": "https://www.instagram.com/viverolos.alamos",
+  "horario": "Lunes a viernes: 9:00 a 18:00 hrs. Sábado: 8:00 a 13:00 hrs.",
+  "logo": "/logo.png",
+  "favicon": "/favicon.svg"
+}

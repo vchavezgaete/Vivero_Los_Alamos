@@ -1,0 +1,36 @@
+{
+  "titulo": "Contacto",
+  "subtitulo": "Consulta disponibilidad o agenda tu visita.",
+  "instrucciones": "Escríbenos para consultar disponibilidad, precios o coordinar tu visita al vivero.",
+  "telefonos": [
+    {
+      "tipo": "WhatsApp",
+      "texto": "+56 9 9637 3763",
+      "url": "https://wa.me/56996373763"
+    },
+    {
+      "tipo": "Teléfono fijo",
+      "texto": "45 261 2428",
+      "url": "tel:+56452612428"
+    }
+  ],
+  "facebook": {
+    "texto": "También puedes seguirnos en Facebook",
+    "boton": "Abrir Facebook",
+    "url": "https://www.facebook.com/profile.php?id=61586331163397"
+  },
+  "instagram": {
+    "texto": "Síguenos en Instagram",
+    "boton": "Abrir Instagram",
+    "url": "https://www.instagram.com/viverolos.alamos"
+  },
+  "ubicacion": {
+    "nombre": "Pasaje Los Cipreses N° 22",
+    "texto": "Huertos Familiares, Nueva Imperial, Región de La Araucanía"
+  },
+  "horario": {
+    "titulo": "Horario de atención",
+    "texto": "Lunes a viernes: 9:00 a 18:00 hrs. Sábado: 8:00 a 13:00 hrs."
+  },
+  "formularioNota": "Confirma stock antes de visitar, especialmente para especies de temporada."
+}

@@ -1,0 +1,57 @@
+{
+  "titulo": "Productos y servicios",
+  "subtitulo": "Todo para tu jardín",
+  "intro": "En Vivero Los Álamos encontrarás plantas nativas, ornamentales, forestales y carbón nativo. Consulta disponibilidad antes de visitar; los valores corresponden al listado de precios 2026.",
+  "categorias": [
+    {
+      "nombre": "Plantas ornamentales",
+      "descripcion": "Plantas de interior y exterior para decorar tu hogar y jardín."
+    },
+    {
+      "nombre": "Árboles y arbustos",
+      "descripcion": "Árboles frutales, ornamentales y arbustos para todo tipo de espacios."
+    },
+    {
+      "nombre": "Sustratos y fertilizantes",
+      "descripcion": "Tierra, sustratos y productos para el cuidado de tus plantas."
+    },
+    {
+      "nombre": "Maceteros y accesorios",
+      "descripcion": "Maceteros, herramientas y accesorios para jardinería."
+    }
+  ],
+  "precios": [
+    {
+      "grupo": "Nativas y ornamentales",
+      "items": [
+        { "producto": "Araucaria", "formato": "En bolsa (6 años)", "precio": "$5.000" },
+        { "producto": "Castaño", "formato": "Raíz desnuda (50 a 80 cm)", "precio": "$1.500" },
+        { "producto": "Castaño", "formato": "En bolsa (1.8 mts)", "precio": "$4.000" },
+        { "producto": "Encino", "formato": "En bolsa (1.9 mts)", "precio": "$3.000" },
+        { "producto": "Ulmo", "formato": "En bolsa (1.5 mts)", "precio": "$3.000" },
+        { "producto": "Avellano", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Boldo", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Canelo", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Hualle (Roble)", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Laurel", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Mañío", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Notro", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Peumo", "formato": "En bolsa", "precio": "$3.000" },
+        { "producto": "Quillay", "formato": "En bolsa", "precio": "$2.000" }
+      ]
+    },
+    {
+      "grupo": "Forestales y otros",
+      "items": [
+        { "producto": "Pino Oregón", "formato": "En bolsa", "precio": "$1.500" },
+        { "producto": "Encino", "formato": "Raíz desnuda (oferta)", "precio": "$600" },
+        { "producto": "Pino Radiata", "formato": "Raíz desnuda (2 años)", "precio": "$300" },
+        { "producto": "Pino Radiata", "formato": "Speedling", "precio": "$220" },
+        { "producto": "Eucaliptus Nitens", "formato": "Speedling", "precio": "$200" },
+        { "producto": "Eucaliptus Globulus", "formato": "Speedling", "precio": "$200" },
+        { "producto": "Carbón nativo", "formato": "Saco", "precio": "$12.000" }
+      ]
+    }
+  ],
+  "nota": "¿Buscas algo en particular? Escríbenos al WhatsApp +56 9 9637 3763 y te ayudamos."
+}
